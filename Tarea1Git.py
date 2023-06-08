@@ -15,3 +15,15 @@ nueva_informacion = {
 nueva_pl = pd.DataFrame(nueva_informacion)
 pl_actualizado = pd.concat([pl, nueva_pl], axis=0).reset_index(drop=True)
 print(pl_actualizado)
+
+
+#Ariana
+
+#DATAFRAME ARIANA 
+pastelería={"Nombre Producto":["vainilla", "chocolate", "red velvet", "marmoleado", "Limón"], 
+"Cantidad de Ventas":[25,15,20,10, 5], 
+"Costo de Produccion":[187500, 112500, 160000, 75000, 45000],
+"Margen de Beneficio":[187500, 112500, 160000, 75000, 45000],  
+"Precio de Venta": [375000, 225000, 360000, 150000, 90000]}
+pt = pd.DataFrame(pastelería)
+print(pt)
