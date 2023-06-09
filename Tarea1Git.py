@@ -15,3 +15,14 @@ nueva_informacion = {
 nueva_pl = pd.DataFrame(nueva_informacion)
 pl_actualizado = pd.concat([pl, nueva_pl], axis=0).reset_index(drop=True)
 print(pl_actualizado)
+
+
+### ARIANA ###
+
+nuevos_datos={"Nombre": ["Orgullo y Prejuicio", "Notting Hill", "Kiki:entregas a domicilio"], 
+"Género":["romance", "romance", "anime" ],
+"Duración": ["2h07m", "2h04m", "1h42m"],
+"Puntaje Rotten Tomatoes": [88, 85, 99]}
+
+dt_act= pd.concat([pl_actualizado, pd.DataFrame(nuevos_datos)], ignore_index=True)
+print(dt_act)
