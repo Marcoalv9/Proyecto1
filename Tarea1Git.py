@@ -26,3 +26,20 @@ nuevos_datos={"Nombre": ["Orgullo y Prejuicio", "Notting Hill", "Kiki:entregas a
 
 dt_act= pd.concat([pl_actualizado, pd.DataFrame(nuevos_datos)], ignore_index=True)
 print(dt_act)
+
+###################
+#  Oscar Centeno  #
+###################
+
+datos_centeno = {"Nombre": ["Avengers: End Game"],
+                  "Género":["Fantasía" ],
+                    "Duración": ["2h59m"],
+                    "Puntaje Rotten Tomatoes": [99]}
+
+df_centeno = pd.DataFrame(datos_centeno)
+
+
+df = dt_act.append(df_centeno, ignore_index=True)
+print(df)
+
+#### Add
