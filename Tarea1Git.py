@@ -26,3 +26,13 @@ nuevos_datos={"Nombre": ["Orgullo y Prejuicio", "Notting Hill", "Kiki:entregas a
 
 dt_act= pd.concat([pl_actualizado, pd.DataFrame(nuevos_datos)], ignore_index=True)
 print(dt_act)
+
+### Jennifer ###
+
+datos_jenny={"Nombre": ["Pulp Fiction", "The Shawshank Redemption"],
+    "Género": ["Crimen", "Drama"],
+    "Duración": ["2h34m", "2h22m"],
+    "Puntaje Rotten Tomatoes": [92, 91]}
+
+dt_act_2= pd.concat([dt_act, pd.DataFrame(datos_jenny)], ignore_index=True)
+print(dt_act_2)
